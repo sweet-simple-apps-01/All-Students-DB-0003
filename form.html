@@ -1,0 +1,92 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Realtime Database</title>
+  <link rel="stylesheet" href="css/form.css">
+  <!-- Firebase Legacy SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="">Student Registration Form</h1>
+        <form id="studentForm" class="">
+            <div class="inputGroup">
+                <input type="text" id="studentName" oninput="setStudentName()"  required autocomplete="off">
+                <label for="studentName" id="studentNameerr">Student Name</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="fatherName" oninput="setfatherName()" required autocomplete="off">
+                <label for="fatherName" id="fatherNameerr">Father's Name</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="motherName" oninput="setmotherName()" required autocomplete="off">
+                <label for="motherName" id="motherNameerr">Mother's Name</label>
+            </div>
+            <div class="inputGroup">
+                <input type="number" id="mobileNumber" oninput="setmobileNumber()" required autocomplete="off">
+                <label for="mobileNumber" id="mobileNumbererr">Mobile Number</label>
+            </div>
+            <div class="inputGroup">
+                <input type="email" id="emailaddress" oninput="setemailaddress()" required autocomplete="off">
+                <label for="emailaddress" id="emailaddresserr">Email</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="village" oninput="setvillage()" required autocomplete="off">
+                <label for="village" id="villageerr">Village</label>
+            </div>
+            <div class="inputGroup">
+                <select id="gender" oninput="setgender()" required>
+                    <option value="Please Select One" disabled selected>Please Select One</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="gender" id="gendererr">Gender</label>
+            </div>
+            <div class="inputGroup">
+                <select id="Whichclass" oninput="setWhichclass()" required>
+                    <option value="Please Select One" disabled selected>Please Select One</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                    <option value="5">Class 5</option>
+                </select>
+                <label for="class" id="Whichclasserr">Class</label>
+            </div>
+            <div class="inputGroup">
+                <select id="section" oninput="setsection()" required>
+                    <option value="Please Select One" disabled selected>Please Select One</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                <label for="section" id="sectionerr">Section</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="roll" oninput="setroll()" required autocomplete="off">
+                <label for="roll" id="rollerr">Roll</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="passwordFild" oninput="setpasswordFild()" required autocomplete="off">
+                <label for="passwordFild" id="passwordFilderr">Password</label>
+            </div>
+            <div class="buttonGroup">
+                <button type="button" onclick="writeData()">Add Record</button>
+                <!-- <button type="button" onclick="readData()">Read Record</button> -->
+            </div>
+        </form>
+    </div>
+  <script src="js/Registration.js"></script>
+</body>
+</html>
+
+
+
+

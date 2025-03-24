@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+      <!-- Firebase Legacy SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    
+</head>
+<body onload="readData()">
+
+    <div class="main">
+        <div class="head">
+            <h2>All Students</h2>
+            <div class="searchSortAdd">
+              <div class="searchbox">
+                <div class="form">
+                  <img class="SearchImg" src="svg/search.svg" alt="search" >
+                  <img class="CrossImg" src="svg/Cross.svg" alt="search" >
+                  <img class="BackImg" src="svg/back.svg" alt="back" >
+                    <input oninput="isSearch()" type="text" id="searchRoll" name="search" placeholder="Search Student " class="spectacledcoder-search-input" autocomplete="on"/>
+                </div>
+            </div>
+            <img class="icon" src="svg/sort.svg" alt="Short">
+              <a href="form.html" class="back-btn">Add New Student</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="boxStudent">
+      <table class="allStudentBox">
+        <tr>
+          <th>Student Name</th>
+          <th>Roll</th>
+          <th>Class</th>
+        </tr>
+      </table>
+      <table class="total">
+
+      </table>
+    </div>
+
+
+
+
+      <script src="js/script.js"></script>
+      <script src="js/Registration.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
