@@ -1,12 +1,11 @@
-
 const firebaseConfig = {
-  apiKey: "AIzaSyA-e99InN4BNhX9VxZh1chBpMAN29Q9obg",
-  authDomain: "student-management-f196e.firebaseapp.com",
-  databaseURL: "https://student-management-f196e-default-rtdb.firebaseio.com",
-  projectId: "student-management-f196e",
-  storageBucket: "student-management-f196e.firebasestorage.app",
-  messagingSenderId: "880191685459",
-  appId: "1:880191685459:web:099a08e73ea245ccba97a6",
+  apiKey: "AIzaSyC6EDh3Fj5bNA7QIKwbQIqr4w5mX_LFoUQ",
+    authDomain: "studentsdb-0001.firebaseapp.com",
+    projectId: "studentsdb-0001",
+    storageBucket: "studentsdb-0001.firebasestorage.app",
+    messagingSenderId: "880808003834",
+    appId: "1:880808003834:web:df40e69d3f8d824289e143",
+    measurementId: "G-7JEQQFKM4Q"
 };
 
 // Firebase অ্যাপ ইনিশিয়ালাইজ করুন
@@ -14,8 +13,6 @@ firebase.initializeApp(firebaseConfig);
 
 // Firebase Realtime Database রেফারেন্স তৈরি করুন
 const database = firebase.database();
-
-
 
 
 // variables
