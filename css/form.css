@@ -1,0 +1,75 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.container{
+    padding: 0 150px;
+    margin: auto;
+}
+#studentForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 20px;
+
+}
+.inputGroup {
+    margin: 1em 0;
+    max-width: 300px;
+    position: relative;
+}
+.inputGroup input, .inputGroup select {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    color: rgb(100, 100, 100);
+}
+.inputGroup :is(input:focus, input:valid, select:focus, select:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 5px;
+    padding: 0.4em;
+    background-color: white;
+}
+.inputGroup :is(input:focus, input:valid, select:focus, select:valid) {
+    border-color: rgb(150, 150, 200);
+}
+.buttonGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 10px 30px;
+    height: fit-content;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 50px;
+    background-color: #1d4ed8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
